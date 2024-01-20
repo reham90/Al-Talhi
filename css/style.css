@@ -297,7 +297,7 @@ html[dir="ltr"] .first-level-link:after {
 }
 
 .fixed-nav {
-	background-color: var(--main-color);
+	background-color: var(--main-hover);
 	margin-top: -112px;
 	transition: all 0.3s ease-in-out;
 }
@@ -937,9 +937,33 @@ html[dir="rtl"] .why-us-section {
 }
 
 .client-img-block {
-	width: 165px;
+	width: 100%;
+    max-width: 120px;
+    height: 100%;
+    max-height: 120px;
 	display: flex;
 	justify-content: center;
+	align-items: center;
+}
+.clients .swiper-slide a{
+	width: 100%;
+    max-width: 120px;
+    height: 100%;
+    max-height: 120px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.clients .swiper-slide{
+	display: flex;
+	justify-content: center;
+}
+.client-img-block img{
+	
+    max-width: 100%;
+    max-height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
 }
 
 .clients .swiper-btn {
@@ -1380,7 +1404,19 @@ html[dir="rtl"] .footer-accordion.active:after {
 	.fixed-nav .menu-item-has-children a:hover {
 		color: var(--main-hover) !important;
 	}
-
+.menu-item-has-children a:hover{
+	color: var(--main-hover) !important;
+}
+.nav-header li a:hover{
+	color: var(--main-hover);
+}
+.count{
+	width: 167px;
+    height: 139px;
+}
+.counter-number{
+	font-size: 40px;
+}
 	.logo {
 		max-width: 160px;
 	}
@@ -1415,7 +1451,23 @@ html[dir="rtl"] .footer-accordion.active:after {
 
 	.counter-section {
 		padding: 10px 0 50px;
-		flex-wrap: wrap;
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		gap:15px;
+	}
+	.countt{
+		display: flex;
+		justify-content: center;
+	}
+	.why-us-block{
+		flex-direction: column;
+		align-items: center;
+	}
+	.why-us-text-title{
+		text-align: center;
+	}
+	.why-us-text{
+		margin-inline-start: 0;
 	}
 
 	.join-us-section:before {
@@ -1447,6 +1499,7 @@ html[dir="rtl"] .footer-accordion.active:after {
 
 	.why-us-text-paragraph {
 		max-width: 100%;
+		text-align: center;
 	}
 
 	.projects-section {
@@ -1459,6 +1512,8 @@ html[dir="rtl"] .footer-accordion.active:after {
 
 	.project-title {
 		max-width: 100%;
+		max-height: 50px;
+		overflow: hidden;
 	}
 
 	.navgition {
@@ -1512,9 +1567,7 @@ html[dir="rtl"] .footer-accordion.active:after {
 		margin: 0;
 	}
 
-	.client-img-block {
-		width: auto;
-	}
+	
 
 	.join-us-section {
 		padding: 0 20px;
@@ -1967,7 +2020,9 @@ html[dir="rtl"] .footer-accordion.active:after {
 		flex-wrap: nowrap;
 		align-items: start;
 	}
-
+.why-icon{
+	height: 51px;
+}
 	.about-us-title {
 		position: relative;
 		top: 0;
