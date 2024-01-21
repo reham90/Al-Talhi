@@ -925,7 +925,7 @@ html[dir="rtl"] .why-us-section {
 	font-size: 30px;
 	font-family: "alfont_com_AlFont_com_Frutiger-LT-Arabic-75-Black";
 	text-align: center;
-	margin: 0 0 80px;
+	margin: 0 0 50px;
 }
 
 .clients {
@@ -1406,6 +1406,9 @@ html[dir="rtl"] .footer-accordion.active:after {
 }
 .nav-header li a:hover{
 	color: var(--main-hover);
+}
+.clients-title{
+	margin: 0 0 50px;
 }
 .count{
 	width: 150px;
