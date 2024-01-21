@@ -211,7 +211,7 @@ $(window).scroll(function() {
     breakpoints: {
         0: {
             slidesPerView: 3,
-            spaceBetween: 15,
+            spaceBetween: 30,
         },
         767: {
             slidesPerView: 4,
