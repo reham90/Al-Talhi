@@ -953,10 +953,12 @@ html[dir="rtl"] .why-us-section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	aspect-ratio: 1/1;
 }
 .clients .swiper-slide{
 	display: flex;
 	justify-content: center;
+	aspect-ratio: 1/1;
 }
 .client-img-block img{
 	
@@ -1411,7 +1413,7 @@ html[dir="rtl"] .footer-accordion.active:after {
 	color: var(--main-hover);
 }
 .count{
-	width: 167px;
+	width: 150px;
     height: 139px;
 }
 .counter-number{
@@ -1438,6 +1440,10 @@ html[dir="rtl"] .footer-accordion.active:after {
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
+		margin-top: 40px;
+	}
+	.footer{
+		padding-bottom: 50px;
 	}
 
 	.copy-right {
@@ -1758,12 +1764,17 @@ html[dir="rtl"] .footer-accordion.active:after {
 		justify-content: flex-start;
 		align-items: center;
 		font-size: 16px;
+		font-family: "Frutiger LT Arabic 65 Bold";
 
+	}
+	.language-anchor a{
+		font-family: "Frutiger LT Arabic 55 Roman" !important;
 	}
 
 	.sub-menu li a {
 		font-size: 14px;
 		margin-inline-start: 15px;
+		font-family: "Frutiger LT Arabic 55 Roman";
 	}
 
 	.sub-menu li {
@@ -1866,7 +1877,7 @@ html[dir="rtl"] .footer-accordion.active:after {
 	.about-section-imgs {
 		width: 100%;
 		margin-top: 100px;
-		margin-bottom: 65px;
+		margin-bottom: 20px;
 	}
 
 	.about-img-block {
